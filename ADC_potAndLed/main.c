@@ -2,8 +2,10 @@
  * this project is about monitoring the temp of the cpu
  * if the temperature of the processor is above 30 .. the led on the board will be red
  * otherwise it will be white
+ * 	
  *
- * main.c
+ *
+ * Sarea Al Hariri
  *
  */
 
@@ -63,7 +65,7 @@ void ADC_Init(){
     delay = SYSCTL_RCGCADC_R ;
 
     //2. Enable the clock to the appropriate GPIO modules via the RCGCGPIO register (see page 340).
-    //To find out which GPIO ports to enable, refer to ìSignal Descriptionî on page 801.
+    //To find out which GPIO ports to enable, refer to ‚ÄúSignal Description‚Äù on page 801.
     // no change since we use the internal temperature sensor
 
     //3. Set the GPIO AFSEL bits for the ADC input pins (see page 671). To determine which GPIOs to
